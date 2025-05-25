@@ -1,0 +1,84 @@
+body {
+    background-color: #f0f2f5;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+/* Input field */
+.input {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 500px;
+    height: 40px;
+    color: #333;
+    padding: 0 10px;
+    font-size: 16px;
+}
+
+/* Submit button */
+.btn {
+    background-color: #007bff;
+    color: white;
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.btn:hover {
+    background-color: #dc3545; /* red */
+    color: white;
+}
+
+/* Task container */
+.tasks {
+    margin-top: 20px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    max-height: 500px;
+    overflow-y: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Each task */
+.tasks .task {
+    background-color: #ffffff;
+    color: #333;
+    padding: 12px 20px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.2s;
+}
+.tasks .task:hover {
+    background-color: #f9f9f9;
+}
+
+/* Completed task */
+.tasks .task.done {
+    text-decoration: line-through;
+    opacity: 0.7;
+    color: green;
+}
+
+/* Delete button */
+.tasks .task span {
+    background-color: #e74c3c;
+    color: white;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.2s;
+}
+.tasks .task span:hover {
+    background-color: #c0392b;
+}
